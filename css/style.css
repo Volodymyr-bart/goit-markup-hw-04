@@ -345,6 +345,26 @@ header {
   background: #2f303a;
 }
 
+.footer-container .container{
+  display: flex;
+}
+
+.enter-link{
+  margin-left:70px ;
+}
+
+.form .item + .item{
+  margin-top: 20px;
+}
+
+.footer-social{
+  display: flex;
+}
+
+.footer-social .item + .item{
+  margin-left: 10px;
+}
+
 .address > .webstudio {
   color: #ffffff;
 }
