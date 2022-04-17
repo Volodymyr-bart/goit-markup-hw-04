@@ -524,19 +524,18 @@ background: rgba(255, 255, 255, 0.1);
 /*Icons bussines*/
 
 .item-div{
+  display: flex;
   width:270px;
   height:120px;
   background: #F5F4FA;
   background-color: teal;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.bussines-icon{
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 
 /*social link*/
@@ -546,7 +545,8 @@ background: rgba(255, 255, 255, 0.1);
   justify-content: center;
 }
 
-.social-list .social-item+.social-item {
+.social-list .social-item+.social-item,
+.social-list .footer-social-item+.footer-social-item {
   margin-left: 10px;
 }
 
@@ -558,6 +558,11 @@ background: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
   fill: #AFB1B8;
+}
+
+.footer-social-item .icon-link {
+  background-color:rgba(255, 255, 255, 0.1);
+  fill: #FFFFFF;
 }
 
 .icon-link:hover,
