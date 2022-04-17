@@ -483,10 +483,7 @@ background: rgba(255, 255, 255, 0.1);
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  
-  
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/Img.png');
-  
   background-repeat: no-repeat;
   background-position: center;   
   outline: 1px solid black;
@@ -527,55 +524,47 @@ background: rgba(255, 255, 255, 0.1);
 /*Icons bussines*/
 
 .item-div{
-  
   width:270px;
   height:120px;
-background: #F5F4FA;
-border-radius: 4px;
-margin-bottom: 30px;
-
+  background: #F5F4FA;
+  background-color: teal;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
-.bussines-icon{  
-  width:70px;
-  height:70px;
-  background-position: center;
-  
+.bussines-icon{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 }
 
-.icon{
-  
-}
+
 /*social link*/
 
-.social-link {
-  display: block;
+.social-list {
   display: flex;
   justify-content: center;
-
 }
 
-.social-link .item+.item {
+.social-list .social-item+.social-item {
   margin-left: 10px;
-
 }
 
-.social-link .item {
-  
-  background-position: center;  
+.icon-link{
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  
+  align-items: center;
+  justify-content: center;
+  fill: #AFB1B8;
 }
 
-.item .icon{
-  display: block;
-  background-position: center;
-
-  width: 20px;
-  height: 20px;
-
+.icon-link:hover,
+.icon-link:focus{
+  background-color: #2196f3;
+  cursor: pointer;
+  fill: #FFFFFF;
 }
 
 /*Icons clients*/
@@ -586,49 +575,34 @@ margin-bottom: 30px;
 }
 
 .item-link{
-  display: block;
+  display: flex;
   fill:#afb1b8;
   width:170px;
   height:92px;  
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  
+  justify-content: center;
+  align-items: center;
 }
 
-.item .item-link:hover,
-.item .item-link:focus {
+.clients-list .clients-list-item+.clients-list-item {
+  margin-left: 30px;
+}
+
+.clients-list-item .item-link:hover,
+.clients-list-item .item-link:focus {
 fill:#2196f3;
 border: 1px solid #2196f3;
 }
 
-.icon-company{
-text-align: center;
-}
-
-
-.clients-list .item + .item {
-  margin-left: 30px;
-}
-
-
-.icon-company{
-  background-position: center;
-  width:106px;
-  height:60px;
-  
-}
 .text-enter{
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 color: #FFFFFF;
-
 }
 
-.icon{
-  background-position: center;
-}
 
 
 
