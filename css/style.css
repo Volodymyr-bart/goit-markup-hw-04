@@ -289,7 +289,7 @@ header {
 /*Section team*/
 
 .team {
-  background: #f5f4fa;
+  background: var(--accent-btn-bg-color);
 }
 
 .team-list {
@@ -357,24 +357,8 @@ header {
   margin-bottom: 20px;
 }
 
-.footer-social{
-  
-  display: inline-flex;
-  
-  
-}
 
-.footer-social .item {
-  
-width: 44px;
-height: 44px;
-border-radius: 50%;
-background: rgba(255, 255, 255, 0.1);
-}
 
-.footer-social .item + .item{
-  margin-left: 10px;
-}
 
 .address > .webstudio {
   color: #ffffff;
@@ -436,6 +420,15 @@ background: rgba(255, 255, 255, 0.1);
 .project-list .item {
   margin-right: 30px;
   margin-bottom: 30px;
+  
+}
+
+.project-list .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+
 }
 
 .item .item-text {
@@ -497,26 +490,19 @@ background: rgba(255, 255, 255, 0.1);
   
 }
 
-.icon-message{
-  fill:#757575;
+.icon-message,
+.icon-phone 
+{
+  fill:var(--primary-text-color);
   margin-right: 10px;
  
 }
-.icon-message:hover,
-.icon-message:focus
- {
-  fill:#2196f3;
-}
-
-.icon-phone {
-  fill:#757575;
-  margin-right: 10px;
-  
-} 
-
-.icon-phone:hover,
-.icon-phone:focus {
-  fill: #2196f3;
+.contact-item .icon-message:hover,
+.contact-item .icon-message:focus,
+.contact-item .icon-phone:hover,
+.contact-item .icon-phone:focus 
+{
+  fill: var(--primary-btn-bg-color);
 }
 
 
@@ -527,7 +513,7 @@ background: rgba(255, 255, 255, 0.1);
   display: flex;
   width:270px;
   height:120px;
-  background: #F5F4FA;  
+  background: var(--accent-btn-bg-color);
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
@@ -566,7 +552,7 @@ background: rgba(255, 255, 255, 0.1);
 
 .icon-link:hover,
 .icon-link:focus{
-  background-color: #2196f3;
+  background-color: var(--primary-btn-bg-color);
   cursor: pointer;
   fill: #FFFFFF;
 }
@@ -595,8 +581,8 @@ background: rgba(255, 255, 255, 0.1);
 
 .clients-list-item .item-link:hover,
 .clients-list-item .item-link:focus {
-fill:#2196f3;
-border: 1px solid #2196f3;
+fill:var(--primary-btn-bg-color);
+border: 1px solid var(--primary-btn-bg-color);
 }
 
 .text-enter{
