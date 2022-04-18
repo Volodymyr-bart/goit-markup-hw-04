@@ -128,6 +128,17 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.btn-portf:hover,
+.btn-portf:focus{
+  color: var(--primary-bg-color);
+  background: var(--primary-btn-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+
+}
+
+
 /*Text*/
 .text {
   letter-spacing: 0.03em;
@@ -347,6 +358,7 @@ header {
 
 .footer-container .container{
   display: flex;
+  align-items: center;
 }
 
 .enter-link{
@@ -360,7 +372,7 @@ header {
 
 
 
-.address > .webstudio {
+.contacts > .webstudio {
   color: #ffffff;
 }
 
@@ -389,8 +401,6 @@ header {
 
 .menu-link:hover,
 .menu-link:focus,
-.contact-item:hover,
-.contact-item:focus,
 .location:hover,
 .location:focus,
 .footer-contact-item:hover,
@@ -398,10 +408,20 @@ header {
   
   cursor: pointer;
   color: var(--primary-btn-bg-color);
+  
 }
 
-
-
+.contact-item:hover,
+.contact-item:focus,
+.contact-item:hover .icon-phone,
+.contact-item:focus .icon-phone,
+.contact-item:hover .icon-message,
+.contact-item:focus .icon-message
+{
+fill: var(--primary-btn-bg-color);
+color: var(--primary-btn-bg-color);
+cursor: pointer;
+}
 
 /* Page portfolio*/
 .portfolio-button {
@@ -423,7 +443,13 @@ header {
   
 }
 
-.project-list .item:hover {
+.project-item-link{
+  display: block;
+}
+
+
+
+.project-item-link:hover{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -497,15 +523,6 @@ header {
   margin-right: 10px;
  
 }
-.contact-item .icon-message:hover,
-.contact-item .icon-message:focus,
-.contact-item .icon-phone:hover,
-.contact-item .icon-phone:focus 
-{
-  fill: var(--primary-btn-bg-color);
-}
-
-
 
 /*Icons bussines*/
 
